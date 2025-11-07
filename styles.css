@@ -1,0 +1,50 @@
+
+
+body {
+    background-color: rgb(254, 245, 235);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(73, 34, 34);
+    font-size: 18px;
+    text-align: center;
+    min-height: 100vh;        /* prend toute la hauteur de la fenêtre */
+    display: flex;
+    flex-direction: column;  /* empile les éléments du haut vers le bas */
+}
+
+h1 {
+    background-color: rgb(196, 139, 139);
+    font-size: 56px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: auto;
+    padding: 20px;
+    border:2px solid black;
+    border-radius: 15px;
+
+}
+h2 {
+    font-family: fantasy;
+}
+
+a {cursor: pointer ;
+}
+
+div {
+    text-align: center;
+}
+img {
+    height: auto;
+    width: 200px;
+    align-items: center;
+}
+main {
+    flex: 1;                  /* pousse le footer vers le bas */
+}
+footer {
+     background-color:rgb(196, 139, 139);
+    text-align: center;
+    padding: 0px;
+    border:2px solid black;
+    border-radius: 15px;
+    
+}
