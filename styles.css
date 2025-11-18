@@ -1,50 +1,92 @@
-
-
-body {
-    background-color: rgb(254, 245, 235);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(73, 34, 34);
+body { 
+    background-color: rgb(254, 245, 235); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: rgb(73, 34, 34); 
     font-size: 18px;
     text-align: center;
-    min-height: 100vh;        /* prend toute la hauteur de la fenêtre */
-    display: flex;
-    flex-direction: column;  /* empile les éléments du haut vers le bas */
-}
+    min-height: 100vh; /* prend toute la hauteur de la fenêtre */ 
+    display: flex; 
+    flex-direction: column; /* empile les éléments du haut vers le bas */
+} 
 
-h1 {
-    background-color: rgb(196, 139, 139);
-    font-size: 56px;
-    font-family:'Times New Roman', Times, serif;
+
+h1 { 
+    background-color: rgb(196, 139, 139); 
+    font-size: 56px; 
+    font-family:'Times New Roman', Times, serif; 
     font-weight: bold;
-    margin: auto;
-    padding: 20px;
-    border:2px solid black;
-    border-radius: 15px;
-
-}
-h2 {
+    margin: auto; 
+    padding: 20px; 
+    border:2px solid black; 
+    border-radius: 15px; 
+} 
+  
+.container { 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+} 
+     
+h2 { 
     font-family: fantasy;
+ } 
+     
+.recipe-container {
+  max-width: 600px; /* largeur du bloc centré */
+  margin: auto;     /* centre horizontalement */
+  text-align: left; /* le texte reste aligné à gauche */
 }
 
-a {cursor: pointer ;
+/*ul { 
+    list-style-type: none;
+ } */
+     
+a {
+    cursor: pointer ; 
+    text-decoration: none; 
+    border: 2px solid black;
+    border-radius: 15px; 
+    padding: 10px; 
+    background-color:rgb(196, 139, 139) ;
 }
 
-div {
-    text-align: center;
-}
-img {
-    height: auto;
-    width: 200px;
+.card {
+    display: flex;              /* transforme le lien en bloc */
+    flex-direction: column;
     align-items: center;
 }
-main {
-    flex: 1;                  /* pousse le footer vers le bas */
+
+.home {
+    display:flex;
+    width: 50px;
+    margin: 20px;
+
 }
-footer {
-     background-color:rgb(196, 139, 139);
+         
+/*div { 
     text-align: center;
-    padding: 0px;
-    border:2px solid black;
+} */
+         
+img { 
+    height: 200px;/* pour que toutes les images aient la même taille*/
+    width: 250px; 
+    object-fit: cover; /* recadre l'image pour remplir l'espace sans déformer object-fit: cover est très utile pour les images de différentes proportions : elles seront recadrées pour remplir le bloc, mais sans être étirées.*/ 
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
     border-radius: 15px;
+    margin: 15px;
+} 
+
+main { 
+    flex: 1; /* pousse le footer vers le bas */ 
+    padding: 50px 0; 
+} 
     
+footer { 
+    background-color:rgb(196, 139, 139); 
+    text-align: center; 
+    padding: 0px; 
+    border:2px solid black; 
+    border-radius: 15px;
 }
