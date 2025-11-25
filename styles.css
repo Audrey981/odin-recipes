@@ -4,18 +4,21 @@ body {
     color: rgb(73, 34, 34); 
     font-size: 18px;
     text-align: center;
+    margin:O;
+} 
+
+.page {
     min-height: 100vh; /* prend toute la hauteur de la fenêtre */ 
     display: flex; 
     flex-direction: column; /* empile les éléments du haut vers le bas */
-} 
-
+}
 
 h1 { 
     background-color: rgb(196, 139, 139); 
     font-size: 56px; 
     font-family:'Times New Roman', Times, serif; 
     font-weight: bold;
-    margin: auto; 
+    margin: 20px auto; 
     padding: 20px; 
     border:2px solid black; 
     border-radius: 15px; 
@@ -23,8 +26,11 @@ h1 {
   
 .container { 
     display: flex;
-    justify-content: space-around; 
-    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    /*justify-content: space-around; 
+    align-items: center;*/
 } 
      
 h2 { 
@@ -37,10 +43,7 @@ h2 {
   text-align: left; /* le texte reste aligné à gauche */
 }
 
-/*ul { 
-    list-style-type: none;
- } */
-     
+
 a {
     cursor: pointer ; 
     text-decoration: none; 
@@ -63,9 +66,6 @@ a {
 
 }
          
-/*div { 
-    text-align: center;
-} */
          
 img { 
     height: 200px;/* pour que toutes les images aient la même taille*/
@@ -89,4 +89,5 @@ footer {
     padding: 0px; 
     border:2px solid black; 
     border-radius: 15px;
+    margin: 20px;
 }
