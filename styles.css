@@ -91,3 +91,16 @@ footer {
     border-radius: 15px;
     margin: 20px;
 }
+.footer-credit {
+  font-size: 0.8rem;        /* texte plus petit pour le footer */
+  text-align: center;        /* centré sur mobile et desktop */
+  max-width: 100%;           /* ne dépasse jamais le conteneur */
+  word-wrap: break-word;     /* coupe les mots si nécessaire */
+  margin: 0 auto;            /* centrer horizontalement */
+  padding: 0.5rem 1rem;      /* petit padding */
+}
+
+.footer-credit a {
+  color: inherit;            /* conserve la couleur du texte */
+  text-decoration: underline; /* ou none selon ton style */
+}
